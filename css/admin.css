@@ -7,7 +7,7 @@
     border: 1px solid #ccd0d4;
     box-shadow: 0 1px 1px rgba(0,0,0,.04);
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 0;
 }
 
 .cpt-item h2 {
@@ -16,11 +16,92 @@
     border-bottom: 1px solid #eee;
 }
 
-.cpt-fields {
-    margin-top: 15px;
+.cpt-header {
+    background: #f5f5f5;
+    border-bottom: 1px solid #ccd0d4;
     padding: 15px;
+}
+
+.cpt-header label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cpt-fields {
+    margin: 15px 0;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.field-section {
+    margin-bottom: 20px;
+}
+
+.field-section h3 {
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.field-section h3 {
+    margin-top: 0;
+}
+
+.sortable-fields {
+    margin: 0;
+    padding: 0;
     background: #f9f9f9;
     border: 1px solid #e5e5e5;
+    padding: 10px;
+    min-height: 50px;
+}
+
+.field-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    cursor: default;
+}
+
+.field-item:hover {
+    background: #f1f1f1;
+}
+
+.field-item.ui-sortable-placeholder {
+    visibility: visible !important;
+    background: #e8f0fe;
+    border: 2px dashed #99c2ff;
+}
+
+.field-item .handle {
+    margin-right: 10px;
+    color: #999;
+    cursor: move;
+}
+
+.field-item .handle:hover {
+    color: #666;
+}
+
+.field-item label {
+    flex-grow: 1;
+    margin-left: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.field-item.disabled {
+    opacity: 0.7;
+    background: #f5f5f5;
+}
+
+.field-item.selected {
+    background: #f0f7ff;
+    border-color: #2271b1;
 }
 
 .field-group {
@@ -45,16 +126,41 @@
     top: 2px;
 }
 
+.spinner.is-active {
+    margin: 5px 10px;
+    float: none;
+}
+
+.notice {
+    margin: 15px 0;
+}
+
 .submit-wrapper {
     margin: 20px 0;
     padding: 15px;
-    background: #fff;
+    background: #f5f5f5;
     border: 1px solid #ccd0d4;
     text-align: right;
 }
 
 .cpt-enabled {
     margin-right: 8px;
+}
+
+.pdf-generator-settings {
+    margin: 20px 0;
+    max-width: 800px;
+}
+
+.field-item-placeholder {
+    border: 2px dashed #b4b9be;
+    background: #f7f7f7;
+    height: 38px;
+    margin-bottom: 5px;
+}
+
+#save-settings {
+    min-width: 120px;
 }
 
 /* Estilo do botão de gerar PDF */
